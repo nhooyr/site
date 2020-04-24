@@ -38,7 +38,7 @@ export default function WhyNhooyr() {
     <>
       <P>
         Back in middle school, I went through quite a few online usernames but never settled on one. Whenever I'd sign
-        up for a new service, my current username happened to be taken and I would conjure up a new one.
+        up for a new service, my current username happened to be taken and I would come up with a new one.
       </P>
       <P>
         First it was anmol444, then armyofminions and then aubble and many more in between. Around the 9th grade, I
@@ -52,7 +52,7 @@ export default function WhyNhooyr() {
         property that encryption and decryption are identical operations.
       </P>
       <P>
-        I applied it to aubble and out came nhooyr. I ran a google search on nhooyr. For the first time ever I saw a
+        I decided to applied it to aubble and out came nhooyr. I ran a google search on nhooyr. For the first time ever I saw a
         google search with zero results.
       </P>
       <P>That’s when I knew it was mine.</P>
@@ -60,10 +60,6 @@ export default function WhyNhooyr() {
         <Input.Text
           value={rot13Input}
           onChange={onROT13Change}
-          css={css`
-            overflow: visible;
-            word-break: normal;
-          `}
         />
         <Input.Submit
           value="ROT13"

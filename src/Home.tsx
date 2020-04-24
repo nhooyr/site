@@ -53,7 +53,7 @@ function PostIndex() {
               <span>
                 <Link href={p.meta.path}>
                   {formatDate(p.meta.publishDate)}
-                  &nbsp; &mdash; &nbsp;
+                  &ensp; &mdash; &ensp;
                   {p.meta.title}
                 </Link>
               </span>

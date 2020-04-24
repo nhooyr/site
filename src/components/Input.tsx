@@ -8,6 +8,7 @@ export function Text(props: { value: string; onChange: React.ChangeEventHandler<
       {...props}
       css={css`
         appearance: none;
+        word-break: normal;
         border-radius: 5px;
         padding: 5px 15px;
         height: 40px;

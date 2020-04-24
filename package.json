@@ -4,11 +4,11 @@
     "dev": "webpack-dev-server",
     "prod": "webpack --mode production && yarn gen",
     "gen": "GEN=1 webpack --mode production && node src/gen/out/index.js",
-    "fmt": "make -f ./ci/Makefile fmt",
-    "lint": "make -f ./ci/Makefile lint",
-    "fix": "make -f ./ci/Makefile fix",
-    "test": "make -f ./ci/Makefile test",
-    "ci": "make -f ./ci/Makefile"
+    "fmt": "./ci/fmt.sh",
+    "lint": "./ci/lint.sh",
+    "fix": "yarn fmt && yarn lint",
+    "test": "jest --config jest/config.js",
+    "ci": "yarn fmt && yarn lint && yarn test"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

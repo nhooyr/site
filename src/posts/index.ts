@@ -19,13 +19,23 @@ export function formatDate(date: Date) {
 }
 
 const index: Array<Post> = [
+  ...(process.env.NODE_ENV === "development" ? [
+    {
+      meta: {
+        title: "Engineering My Blog",
+        path: "/engineering-my-blog",
+        publishDate: new Date("April 27, 2020"),
+      },
+      body: () => import("./2020-04-27-EngineeringMyBlog"),
+    }
+  ] : []),
   {
     meta: {
       title: "Why nhooyr?",
       path: "/why-nhooyr",
       publishDate: new Date("Feb 9, 2020"),
     },
-    body: () => import("./2-WhyNhooyr"),
+    body: () => import("./2020-02-09-WhyNhooyr"),
   },
   {
     meta: {
@@ -33,7 +43,7 @@ const index: Array<Post> = [
       path: "/time-to-give-back",
       publishDate: new Date("Feb 2, 2020"),
     },
-    body: () => import("./1-TimeToGiveBack"),
+    body: () => import("./2020-02-02-TimeToGiveBack"),
   },
 ]
 

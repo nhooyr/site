@@ -14,7 +14,7 @@ export default function TimeToGiveBack() {
       </P>
       <P>
         The greatest factor in my success as an engineer has been my own passion, initiative and focus. However, the
-        incredible volume of quality reading available on websites, blogs and forums has contributed immensely. For at
+        incredible volume of quality reading available on websites, blogs and forums contributed heavily. For at
         least the last 8 years, the internet has been my primary means of education.
       </P>
       <P>It's time for me to contribute back.</P>
