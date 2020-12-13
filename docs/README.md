@@ -46,6 +46,8 @@ Dashes just look wrong with an extension as well. Underscores look right.
 
 Most websites also use dashes in my experience.
 
+Dashes are also easier to type as you don't need shift.
+
 ### Trailing Slashes
 
 Aesthetics are a cost but it's more consistent with how the root path `/` behaves and I
