@@ -70,6 +70,26 @@ I'll prune old assets after 24 hours.
 
 Furthermore, the HTML itself is cached for 24 hours.
 
+### Date URLs
+
+Not sure what to call this exactly but each post's path will be date prefixed.
+
+e.g. `https://nhooyr.io/2020/02/05/time-to-give-back`
+
+This provides very useful context in knowing how old or relevant some content is and
+prevents post path collisions in the future.
+
+The only concern here is that there may be an old post on something that I intend to
+maintain. e.g. a guide to setting up FreeBSD. A date prefix in the URL with the original
+date would be very confusing. However, I can promote specific posts to permanent paths to
+reflect their date orthogonality.
+
+### Tags
+
+Each post may have as many tags as desired. For a post the tags are flat, i.e each
+tag has the same importance. However, when using the search function to filter for tags,
+the tags will be themselves sorted into a tree where the nodes are tags.
+
 ## Development
 
 Live reload will make editing my text much easier as since I'll be writing HTML, it'll be
